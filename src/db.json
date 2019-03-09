@@ -1,0 +1,54 @@
+{
+    "car_data": [
+        {
+            "make": "BMW",
+            "model": "I8",
+            "year": "2015",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/fake-json-server-a7.appspot.com/o/bmw-i8-2015.jpg?alt=media&token=8062b62e-815a-477b-a857-3e8d09910bdc",
+            "quality" : [{ 
+                "name" : "overall",
+                "rating" : 1
+            },{ 
+                "name" : "mechanical",
+                "rating" : 4
+            },{ 
+                "name" : "powertrain",
+                "rating" : 2
+            },{ 
+                "name" : "body",
+                "rating" : 4
+            },{ 
+                "name" : "interior",
+                "rating" : 3
+            },{ 
+                "name" : "accessories",
+                "rating" : 2
+            }]
+        },
+        {
+            "make": "BMW",
+            "model": "M6",
+            "year": "2015",
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/fake-json-server-a7.appspot.com/o/bmw-m6-2015.jpg?alt=media&token=14913023-4f9e-4212-8e5f-10d710b9eff3",
+            "quality" : [{ 
+                "name" : "overall",
+                "rating" : 3
+            },{ 
+                "name" : "mechanical",
+                "rating" : 4
+            },{ 
+                "name" : "powertrain",
+                "rating" : 2
+            },{ 
+                "name" : "body",
+                "rating" : 4
+            },{ 
+                "name" : "interior",
+                "rating" : 3
+            },{ 
+                "name" : "accessories",
+                "rating" : 2
+            }]
+        }
+    ]
+}
