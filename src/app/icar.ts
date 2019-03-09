@@ -6,7 +6,7 @@ export interface ICar {
     quality: ICarQuality[];
 }
 
-interface IcarQuality {
+interface ICarQuality {
     name: string;
     rating: string;
 

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CarApiService } from '../car-api.service';
 import { ICar } from '../icar';
-import { Car } from '../car';
 
 
 @Component({
