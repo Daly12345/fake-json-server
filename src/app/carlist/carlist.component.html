@@ -1,0 +1,10 @@
+<h2 class="ui grey header">
+<img class="ui image" src="./assets/images/Arthur_Daley.jpg" 
+[style.width.px]=150>
+<div class="context"> 
+  Arthur Daley quality Used cars
+  <h4><i>A name you can trust</i></h4>
+</div>
+</h2>
+<app-car *ngFor="let carData of carsData"
+[carData]="carData"></app-car>
