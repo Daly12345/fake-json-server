@@ -4,9 +4,14 @@ export interface ICar {
     year: string,
     imageURL: string;
     quality: ICarQuality[];
-}
 
-interface ICarQuality {
+   
+    }
+
+
+
+
+export interface ICarQuality {
     name: string;
     rating: string;
 

@@ -1,22 +1,22 @@
 <div class="ui raised segment">
-  <div class="ui two column very relaxed grid "> 
+  <div class="ui three column very relaxed grid">
     <div class="column">
-      <div ngIf* ="carData">
+      <div *ngIf="carData">
         <h3>Make: {{carData.Make}}</h3>
-        <h3>Model: {{carData.model}}</h3>
-        <h3>year: {{carData.year}}</h3>
+        <h3>Model: {{carData.Model}}</h3>
+        <h3>Year: {{carData.year}}</h3>
+      </div>
     </div>
-  </div>
-    <div class="column"></div>
-      <div *ngIf="carData"></div>
+    <div class="column">
+      <div *ngIf="carData">
         <img src={{carData.imageURL}} [style.width.px]='carImageWidth'>
       </div>
     </div>
     <div class="column">
       <div *ngIf="carData">
         <div *ngFor="let tempRatings of carData.quality; let i=index;">
-            {{carData.quality[1].name | uppercase }}: {{carData.quality[1].rating}}
-        </div>
+          {{carData.quality[i].name | uppercase}}: {{carData.quality[i].rating}}</div>
       </div>
     </div>
-  
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="ui raised segment">
+  <button class="ui button right floated" (click)="show = !show"> {{show ? 'Hide' : 'Add a Car'}}</button>
+  <br><br>
+  <div *ngIf="show">
+    <form class="ui form">
+      <div class="field">
+        <label>Make</label>
+        <input type="text" name="make" placeholder="Enter Make" #make>
+      </div>
+        <div class="field">
+          <label>Model</label>
+          <input type="text" name="model" placeholder="Enter Model" #model>
+        </div>
+        <div class="field">
+          <label>Year</label>
+          <input type="text" name="year" placeholder="Enter Year" #year>
+        </div>
+        <div class="field">
+          <label>Image</label>
+          <input type="text" name="imageURL" placeholder="Enter Link To Image" #imageUrl>
+        </div>
+        <button class="ui primary button" type="submit" (click)="addCar(make.value,
+          model.value,year.value,imageUrl.value)">Add the Car</button>
+        <button class="ui button" type="reset">Cancel</button>
+    </form> 

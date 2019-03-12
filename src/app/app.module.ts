@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { CarlistComponent } from './carlist/carlist.component';
 import { CarComponent } from './car/car.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddCarComponent } from './add-car/add-car.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarlistComponent,
-    CarComponent
+    CarComponent,
+    AddCarComponent
   ],
   imports: [
     BrowserModule,
