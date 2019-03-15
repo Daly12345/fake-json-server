@@ -16,6 +16,13 @@
       <div *ngIf="carData">
         <div *ngFor="let tempRatings of carData.quality; let i=index;">
           {{carData.quality[i].name | uppercase}}: {{carData.quality[i].rating}}</div>
+        </div>
+          <div *ngIf="carData.myReview">
+            My Review: {{carData.myReview}}
+          </div> 
+        <div class="field">
+          <textarea rows="4" #review placeholder="Add a short review"></textarea><br>
+          <button class="ui button primary" (click)="addReview(review.value)">Add Your Review</button>
       </div>
     </div>
   </div>

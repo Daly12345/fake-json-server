@@ -6,6 +6,6 @@
   <h4><i>A name you can trust</i></h4>
 </div>
 </h2>
-<app-add-car> (addCarEE)="addCar($event)"</app-add-car>
+<app-add-car (addCarEE)="addCar($event)"></app-add-car>
 <app-car *ngFor="let carData of carsData"
 [carData]="carData"></app-car>

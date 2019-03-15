@@ -4,7 +4,7 @@ export interface ICar {
     year: string,
     imageURL: string;
     quality: ICarQuality[];
-
+    myReview: string;
    
     }
 

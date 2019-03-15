@@ -12,6 +12,12 @@ export class CarComponent implements OnInit {
 
   constructor() { }
 
+  addReview(review:string):boolean{
+    console.log("CarComponent: addReview: review = "+review)
+    this.carData.myReview=review;
+    return false;
+  }
+
   ngOnInit() {
   }
 
