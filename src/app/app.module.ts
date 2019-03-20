@@ -6,6 +6,10 @@ import { CarlistComponent } from './carlist/carlist.component';
 import { CarComponent } from './car/car.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddCarComponent } from './add-car/add-car.component';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {AngularFireModule} from '@angular/fire';
+import {environment} from '../environments/environment';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { AddCarComponent } from './add-car/add-car.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase,),
+    AngularFirestoreModule,
+    RouterModule.forRoot(routes),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
